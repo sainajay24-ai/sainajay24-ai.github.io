@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ajay Sain , Content Strategy, Editorial, SEO, Audience Growth and Distribution.">
+<title>Ajay Sain | Content Strategy & Audience Growth</title>
+<style>
+:root{ --ink:#171717;--muted:#68645f;--line:#dedbd5;--paper:#f8f7f3;--surface:#fff; --accent:#ff7657;--accent-soft:#fff0eb;--blue:#345f8a;--green:#47755d; --shadow:0 18px 50px rgba(20,20,20,.09);--radius:12px;--max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+a{color:inherit;text-decoration-color:rgba(255,118,87,.45);text-underline-offset:.18em}
+a:hover{text-decoration-color:var(--accent)}
+.skip{position:absolute;left:16px;top:-50px;background:#111;color:#fff;padding:10px 14px;z-index:20}
+.skip:focus{top:16px}
+nav{ position:fixed; z-index:50; top:16px; left:50%; transform:translateX(-50%); width:min(var(--max),calc(100% - 36px)); display:flex; justify-content:space-between; align-items:center; gap:20px; padding:12px 16px; background:rgba(255,255,255,.86); border:1px solid rgba(222,219,213,.92); border-radius:999px; box-shadow:0 10px 30px rgba(20,20,20,.08); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+}
+.brand{font-weight:900;text-decoration:none;letter-spacing:-.03em}
+.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.88rem;align-items:center}
+.navlinks a{transition:color .18s ease}
+.navlinks a:hover{color:var(--ink)}
+.navlinks a{text-decoration:none}
+.hero{width:min(var(--max),calc(100% - 36px));margin:auto;padding:118px 0 72px;display:grid;grid-template-columns:1.08fr .92fr;gap:58px;align-items:center}
+.eyebrow{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;font-weight:850;color:var(--accent);margin:0 0 16px}
+h1{font-size:clamp(4rem,9vw,7.8rem);line-height:.84;letter-spacing:-.075em;margin:0 0 28px;max-width:8ch}
+.hero-copy{font-size:clamp(1.18rem,2.3vw,1.45rem);max-width:720px;color:#3f3c38;margin-bottom:30px}
+.buttons{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border:1px solid #171717;border-radius:7px;background:#171717;color:#fff;text-decoration:none;font-weight:800}
+.btn.alt{background:transparent;color:#171717;border-color:var(--line)}
+.hero-card{background:#171717;color:#fff;border-radius:18px;padding:28px;box-shadow:var(--shadow);overflow:hidden;position:relative}
+.hero-card:before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:var(--accent);right:-70px;top:-75px;opacity:.95}
+.hero-card .tiny{position:relative;color:#aaa;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:800}
+.hero-card h2{position:relative;font-size:2rem;line-height:1.03;letter-spacing:-.045em;max-width:10ch;margin:14px 0 25px}
+.signal{position:relative;display:grid;grid-template-columns:38px 1fr;gap:12px;padding:15px 0;border-top:1px solid #353535}
+.signal b{display:block;font-size:.96rem}.signal span{color:#aaa;font-size:.88rem}
+.dot{width:38px;height:38px;border-radius:50%;background:#fff;color:#171717;display:grid;place-items:center;font-weight:900}
+section{padding:78px 0}
+.inner{width:min(var(--max),calc(100% - 36px));margin:auto}
+.sectionhead{display:grid;grid-template-columns:.7fr 1fr;gap:45px;align-items:start;margin-bottom:34px}
+h2{font-size:clamp(2.25rem,4.4vw,4rem);line-height:.98;letter-spacing:-.065em;margin:0}
+.sectionhead p,.lead{color:var(--muted);font-size:1.03rem;margin:0}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.metric{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;min-height:160px;display:flex;flex-direction:column;justify-content:space-between}
+.metric .num{font-size:clamp(2.2rem,4vw,3.4rem);font-weight:900;letter-spacing:-.065em;line-height:1}
+.metric .label{color:var(--muted);font-size:.88rem}
+.tag{display:inline-flex;width:max-content;border:1px solid var(--line);border-radius:999px;padding:4px 9px;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;font-weight:850;color:var(--muted)}
+.band{background:#eee9df;border-block:1px solid var(--line)}
+.evolution{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.evo{background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:10px;padding:20px;min-height:205px;position:relative}
+.evo:not(:last-child):after{content:"→";position:absolute;right:-13px;top:45%;color:var(--accent);font-weight:900;font-size:18px;z-index:2}
+.evo .step{width:30px;height:30px;border-radius:50%;background:#171717;color:#fff;display:grid;place-items:center;font-weight:900;margin-bottom:17px}
+.evo h3{font-size:1rem;line-height:1.15;margin:0 0 8px}.evo p{font-size:.87rem;color:var(--muted);margin:0}
+.cases{display:grid;gap:22px}
+.case{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.case-top{display:grid;grid-template-columns:1fr .8fr;gap:30px;padding:28px;border-bottom:1px solid var(--line)}
+.case h3{font-size:clamp(1.7rem,3.2vw,2.6rem);line-height:1.02;letter-spacing:-.045em;margin:10px 0 13px}
+.case-top p{color:var(--muted);margin:0}
+.resultbox{background:#f6f4ef;border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;align-content:center}
+.resultbox .resultrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.result{background:#fff;padding:17px}.result b{display:block;font-size:1.75rem;letter-spacing:-.055em;line-height:1}.result span{display:block;color:var(--muted);font-size:.72rem;margin-top:6px}
+.case-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.case-grid article{padding:22px;border-right:1px solid var(--line)}
+.case-grid article:last-child{border-right:0}
+.case-grid h4,.work h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--accent);margin:0 0 8px}
+.case-grid p{color:var(--muted);font-size:.9rem;margin:0}
+.workgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.work{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;min-height:190px;transition:transform .2s ease,box-shadow .2s ease}
+.work:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.work h3{font-size:1.35rem;letter-spacing:-.03em;margin:10px 0 7px}.work p{color:var(--muted);margin:0 0 17px;font-size:.9rem}.work a{font-weight:800;font-size:.88rem}
+.writing{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.writing-card{background:#171717;color:#fff;border-radius:14px;padding:30px}
+.writing-card h3{font-size:2.1rem;line-height:1;letter-spacing:-.05em;margin:10px 0 12px}.writing-card p{color:#aaa}.writing-card a{color:#fff}
+.prooflist{display:grid;gap:10px;margin-top:25px}.proofitem{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #353535;padding-top:11px;font-size:.88rem}.proofitem b{color:#fff}
+.white-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px}
+.white-card h3{font-size:1.7rem;letter-spacing:-.04em;margin:0 0 12px}.white-card p{color:var(--muted)}
+.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.aboutcard{border-top:3px solid var(--accent);padding-top:18px}.aboutcard:nth-child(2){border-color:var(--blue)}.aboutcard:nth-child(3){border-color:var(--green)}.aboutcard h3{margin:0 0 8px;font-size:1.05rem}.aboutcard p{color:var(--muted);margin:0}
+.contact{background:#171717;color:#fff}.contact .sectionhead p{color:#aaa}.contact .btn{background:#fff;color:#171717;border-color:#fff}.contact .btn.alt{background:transparent;color:#fff;border-color:#444}
+footer{padding:24px 0;color:var(--muted);font-size:.85rem}.footerinner{width:min(var(--max),calc(100% - 36px));margin:auto;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:980px){ .hero,.sectionhead,.case-top,.writing{grid-template-columns:1fr} .metrics,.evolution{grid-template-columns:repeat(2,1fr)} .case-grid{grid-template-columns:repeat(2,1fr)} .case-grid article:nth-child(2){border-right:0} .case-grid article{border-bottom:1px solid var(--line)} .evo:not(:last-child):after{display:none}
+}
+@media(max-width:720px){ nav{top:10px;width:calc(100% - 20px);padding:10px 13px;gap:10px} .brand{font-size:.92rem} .navlinks{width:auto;max-width:72vw;overflow-x:auto;gap:16px;padding-bottom:1px;white-space:nowrap} .hero{padding-top:108px}.hero-card{margin-top:10px} section{padding:55px 0} .metrics,.evolution,.case-grid,.workgrid,.aboutgrid{grid-template-columns:1fr} .case-grid article,.case-grid article:nth-child(2){border-right:0} .case-grid article:last-child{border-bottom:0} .resultbox .resultrow{grid-template-columns:1fr} h1{font-size:clamp(4rem,20vw,6.5rem)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work{transition:none}} /* V8 data visualisation + recommendations */
+.data-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin-top:24px}
+.data-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;overflow:hidden}
+.data-card.dark{background:#171717;color:#fff;border-color:#171717}
+.data-card h3{font-size:1.25rem;letter-spacing:-.035em;margin:0 0 5px}
+.data-card .sub{font-size:.78rem;color:var(--muted);margin-bottom:18px}
+.data-card.dark .sub{color:#aaa}
+.chart-wrap{width:100%;overflow:hidden}
+.chart-wrap svg{display:block;width:100%;height:auto}
+.axis{stroke:#d9d5ce;stroke-width:1}.bar{fill:var(--accent)}.bar2{fill:#345f8a}
+.chart-label{fill:#68645f;font-size:10px}.chart-value{fill:#171717;font-size:10px;font-weight:800}
+.line{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.point{fill:#fff;stroke:var(--accent);stroke-width:3}
+.format-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.format{border:1px solid #353535;border-radius:10px;padding:18px}
+.format b{font-size:1.8rem;letter-spacing:-.05em;display:block}.format span{font-size:.76rem;color:#aaa}
+.revenue-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:20px}
+.revenue-stat{background:#fff;padding:18px}.revenue-stat b{display:block;font-size:1.55rem;letter-spacing:-.05em}.revenue-stat span{font-size:.7rem;color:var(--muted)}
+.recs{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;align-items:start}
+.rec{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0;position:relative;overflow:hidden}
+.rec:before{content:"“";font-family:Georgia,serif;font-size:5rem;line-height:.7;color:var(--accent);position:absolute;right:18px;top:18px;opacity:.25;pointer-events:none}
+.rec summary{list-style:none;cursor:pointer;padding:25px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between}
+.rec summary::-webkit-details-marker{display:none}
+.rec-head{display:flex;gap:12px;align-items:center;padding-right:25px}
+.rec-avatar{width:46px;height:46px;border-radius:50%;background:#171717;color:#fff;display:grid;place-items:center;font-weight:900;flex:0 0 46px}
+.rec-name{font-weight:900;line-height:1.1}.rec-role{font-size:.7rem;color:var(--muted);margin-top:4px}
+.rec-toggle{font-size:.72rem;font-weight:850;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.rec-toggle:after{content:" +";font-size:1rem}
+.rec[open] .rec-toggle:after{content:" −"}
+.rec-body{padding:0 25px 25px;border-top:1px solid var(--line);margin-top:0}
+.rec-body blockquote{margin:20px 0 0;color:#46423e;font-size:.88rem;line-height:1.65}
+.rec-body blockquote+blockquote{margin-top:14px}
+@media(max-width:980px){.recs{grid-template-columns:1fr}.rec summary{min-height:0}}
+@media(max-width:980px){.data-grid,.recs{grid-template-columns:1fr}.revenue-strip{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.format-grid,.revenue-strip{grid-template-columns:1fr}.data-card{padding:18px}} .portfolio-overview{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.property-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+.property-card .period{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:850;margin-top:7px}
+.property-card h3{font-size:1.45rem;letter-spacing:-.04em;margin:12px 0 8px}
+.property-card p{font-size:.86rem;color:var(--muted);margin:0 0 17px}
+.property-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.property-metric{background:#f6f4ef;border-radius:8px;padding:12px}
+.property-metric b{display:block;font-size:1.35rem;letter-spacing:-.05em}
+.property-metric span{font-size:.68rem;color:var(--muted)}
+.property-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.property-links a{font-size:.76rem;font-weight:800;text-decoration:none}
+.property-links a:after{content:" →"}
+.case-top .period{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-weight:800;margin-top:10px}
+@media(max-width:980px){.portfolio-overview{grid-template-columns:1fr}.writing{grid-template-columns:1fr}.writing .workgrid{grid-template-columns:1fr}}
+
+/* V18 writing layout */
+.writing-layout{display:grid;grid-template-columns:1.02fr .98fr;gap:20px;align-items:stretch}
+.writing-foundation{background:#171717;color:#fff;border-radius:16px;padding:30px;display:flex;flex-direction:column;min-height:0}
+.writing-foundation h3{font-size:1.8rem;letter-spacing:-.045em;margin:14px 0 10px}
+.writing-foundation p{color:#c7c4bf;line-height:1.55;max-width:540px;margin:0}
+.writing-points{margin-top:24px;border-top:1px solid #343434}
+.writing-point{display:grid;grid-template-columns:32px 1fr;gap:10px;padding:13px 0;border-bottom:1px solid #343434;align-items:center}
+.writing-point>span{font-size:.66rem;color:#777;font-weight:850}
+.writing-point b{display:block;font-size:.86rem}.writing-point small{display:block;color:#8e8b86;font-size:.7rem;margin-top:2px}
+.writing-foot{display:flex;justify-content:space-between;gap:12px;margin-top:auto;padding-top:18px;color:#8e8b86;font-size:.74rem}
+.writing-foot b{color:#fff}
+.commercial-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.work-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;min-height:0}
+.work-card h3{font-size:1.4rem;letter-spacing:-.04em;margin:13px 0 9px}
+.work-card p{color:#625e59;font-size:.82rem;line-height:1.55;margin:0 0 16px}
+.work-card a{margin-top:auto;color:#171717;font-weight:850;text-decoration:none;border-bottom:1px solid #ff7058;width:max-content;padding-bottom:3px}
+.work-card .tag{font-size:.66rem}
+
+/* V18 testimonial slideshow */
+.testimonial-slider{display:grid;grid-template-columns:46px minmax(0,1fr) 46px;gap:12px;align-items:center;max-width:980px;margin:0 auto}
+.testimonial-track{min-height:310px}
+.testimonial-slide{display:none;background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px 36px;box-shadow:0 10px 35px rgba(0,0,0,.04)}
+.testimonial-slide.active{display:block}
+.testimonial-meta{display:flex;gap:13px;align-items:center;margin-bottom:22px}
+.testimonial-slide .rec-avatar{width:50px;height:50px;flex-basis:50px}
+.testimonial-slide .rec-name{font-size:1rem}.testimonial-slide .rec-role{font-size:.72rem}
+.testimonial-excerpt{margin:0;color:#3f3b37;font-size:1rem;line-height:1.7}
+.testimonial-more{margin-top:18px}
+.testimonial-more summary{cursor:pointer;list-style:none;color:var(--accent);font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.testimonial-more summary::-webkit-details-marker{display:none}
+.testimonial-more summary:after{content:"  +"}
+.testimonial-more[open] summary:after{content:"  −"}
+.testimonial-full{border-top:1px solid var(--line);margin-top:15px;padding-top:15px;color:#3f3b37;font-size:.9rem;line-height:1.7}
+.testimonial-full p{margin:0 0 13px}
+.testimonial-full p:last-child{margin-bottom:0}
+.testimonial-nav{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:#171717;font-size:1.1rem;cursor:pointer}
+.testimonial-nav:hover{border-color:#171717}
+.testimonial-dots{display:flex;justify-content:center;gap:7px;margin-top:17px}
+.testimonial-dots .dot{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:#c9c5bf;cursor:pointer}
+.testimonial-dots .dot.active{background:#171717}
+@media(max-width:980px){
+  .writing-layout{grid-template-columns:1fr}
+  .commercial-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .commercial-grid{grid-template-columns:1fr}
+  .testimonial-slider{grid-template-columns:36px minmax(0,1fr) 36px;gap:7px}
+  .testimonial-slide{padding:24px}
+  .testimonial-track{min-height:360px}
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a> <header id="top">
+<nav>
+<a class="brand" href="#top">Ajay Sain</a>
+
+<div class="navlinks">
+<a href="#proof">Proof</a><a href="#work">Work</a><a href="#writing">Writing</a><a href="#testimonials">Testimonials</a><a href="#about">About</a><a href="#contact">Contact</a>
+</div>
+
+</nav> 
+<div class="hero">
+<div>
+<p class="eyebrow">Content strategy · Editorial · SEO · Audience growth</p>
+<h1>Ajay Sain</h1>
+<p class="hero-copy"><strong>Content Strategy · SEO · Audience Growth · Distribution</strong><br>I build content systems that connect editorial decisions with audience, traffic and revenue.</p>
+
+<div class="buttons">
+<a class="btn" href="mailto:sainajay24@gmail.com">Email me</a> <a class="btn alt" href="https://wa.me/917340418845" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn alt" href="https://www.linkedin.com/in/ajay-sain-0124a1137/" target="_blank">LinkedIn</a>
+</div>
+
+</div>
+ <aside class="hero-card">
+<span class="tiny">My progression</span>
+<h2>I started by writing. I learned how to make content work.</h2>
+
+<div class="signal">
+<div class="dot">1</div>
+<div><b>Craft</b><span>Research, writing, SEO, search intent and editorial judgment.</span></div>
+</div>
+
+
+<div class="signal">
+<div class="dot">2</div>
+<div><b>Strategy</b><span>Content systems, evergreen planning, commercial content and performance.</span></div>
+</div>
+
+
+<div class="signal">
+<div class="dot">3</div>
+<div><b>Growth</b><span>Distribution, audience behaviour, scale, teams and measurable outcomes.</span></div>
+</div>
+
+</aside>
+</div>
+
+</header> <main id="main"> <section id="proof">
+
+<div class="inner">
+
+<div class="sectionhead"><h2>My work, measured.</h2><p>Traffic, distribution and revenue across the three properties I managed , with each metric tied to its documented reporting period.</p></div>
+
+
+<div class="metrics">
+
+<div class="metric"><span class="tag">Inde News</span>
+<div class="num">95.94M</div>
+
+<div class="label">pageviews · Oct 2025-Jul 2026</div>
+</div>
+
+
+<div class="metric"><span class="tag">Gaming Community</span>
+<div class="num">59.56M</div>
+
+<div class="label">pageviews · Nov 2025-Jul 2026</div>
+</div>
+
+
+<div class="metric"><span class="tag">Netflix Junkie</span>
+<div class="num">24.41M</div>
+
+<div class="label">pageviews · Jun-Jul 2026</div>
+</div>
+
+
+<div class="metric"><span class="tag">Portfolio · July 2026</span>
+<div class="num">49.3M</div>
+
+<div class="label">combined monthly pageviews across all three properties</div>
+</div>
+
+</div>
+
+</div>
+ 
+<div class="data-grid"> 
+<div class="data-card"> <span class="tag">Inde News · Oct 2025 to Jul 2026</span> <h3>Steady month-on-month growth.</h3> 
+<div class="sub">Monthly pageviews in millions. July closed at 17.87M, 10.1% above June's 16.32M.</div>
+ 
+<div class="chart-wrap"> <svg viewBox="0 0 760 300" role="img" aria-label="Inde News monthly pageviews from November 2025 to July 2026"> <line x1="55" y1="245" x2="735" y2="245" class="axis"/> <line x1="55" y1="185" x2="735" y2="185" class="axis"/> <line x1="55" y1="125" x2="735" y2="125" class="axis"/> <line x1="55" y1="65" x2="735" y2="65" class="axis"/> <text x="20" y="249" class="chart-label">0</text><text x="14" y="189" class="chart-label">5M</text> <text x="8" y="129" class="chart-label">10M</text><text x="8" y="69" class="chart-label">15M</text> <rect x="72" y="242.6" width="48" height="2.4" class="bar"/> <rect x="145" y="199.6" width="48" height="45.4" class="bar"/> <rect x="218" y="118.3" width="48" height="126.7" class="bar"/> <rect x="291" y="127.7" width="48" height="117.3" class="bar"/> <rect x="364" y="103.2" width="48" height="141.8" class="bar"/> <rect x="437" y="147.9" width="48" height="97.1" class="bar"/> <rect x="510" y="38.1" width="48" height="206.9" class="bar"/> <rect x="583" y="49.2" width="48" height="195.8" class="bar"/> <rect x="656" y="30.6" width="48" height="214.4" class="bar"/> <text x="76" y="264" class="chart-label">Nov</text><text x="149" y="264" class="chart-label">Dec</text> <text x="222" y="264" class="chart-label">Jan</text><text x="295" y="264" class="chart-label">Feb</text> <text x="368" y="264" class="chart-label">Mar</text><text x="441" y="264" class="chart-label">Apr</text> <text x="514" y="264" class="chart-label">May</text><text x="587" y="264" class="chart-label">Jun</text> <text x="660" y="264" class="chart-label">Jul</text> <text x="79" y="235" class="chart-value">0.20M</text> <text x="152" y="193" class="chart-value">3.78M</text> <text x="221" y="112" class="chart-value">10.56M</text> <text x="294" y="121" class="chart-value">9.77M</text> <text x="367" y="97" class="chart-value">11.81M</text> <text x="440" y="142" class="chart-value">8.09M</text> <text x="513" y="32" class="chart-value">17.24M</text> <text x="586" y="43" class="chart-value">16.32M</text> <text x="659" y="24" class="chart-value">17.87M</text> </svg> </div>
+ </div>
+ 
+<div class="data-card dark"> <span class="tag" style="border-color:#444;color:#aaa">July mix</span> <h3>Gallery drove reach. Articles drove depth.</h3> 
+<div class="sub">July 2026 content mix, based on the supplied traffic dataset.</div>
+ 
+<div class="format-grid"> 
+<div class="format"><b>17.23M</b><span>Gallery pageviews</span></div>
+ 
+<div class="format"><b>618K</b><span>Article pageviews</span></div>
+ 
+<div class="format"><b>26.6K</b><span>Video pageviews</span></div>
+ 
+<div class="format"><b>64s</b><span>Avg article time per PV</span></div>
+ </div>
+ <p style="color:#aaa;font-size:.78rem;margin:18px 0 0">Across the broader documented period, galleries generated 83.9% of pageviews, while articles generated 43% of reading time from only 7% of traffic.</p> </div>
+
+</div>
+ 
+<div class="data-grid"> 
+<div class="data-card"> <span class="tag">Jan to Jul 2026</span> <h3>Monthly traffic rose 69.2% from January to July.</h3> 
+<div class="sub">January to July shows a clear upward trend in monthly traffic.</div>
+ 
+<div class="chart-wrap"> <svg viewBox="0 0 760 260" role="img" aria-label="Inde News January to July pageview growth line chart"> <line x1="55" y1="210" x2="735" y2="210" class="axis"/> <line x1="55" y1="145" x2="735" y2="145" class="axis"/> <line x1="55" y1="80" x2="735" y2="80" class="axis"/> <polyline points="85,145 190,155 295,131 400,210 505,30 610,43 715,26" class="line"/> <circle cx="85" cy="145" r="5" class="point"/><circle cx="190" cy="155" r="5" class="point"/> <circle cx="295" cy="131" r="5" class="point"/><circle cx="400" cy="210" r="5" class="point"/> <circle cx="505" cy="30" r="5" class="point"/><circle cx="610" cy="43" r="5" class="point"/> <circle cx="715" cy="26" r="5" class="point"/> <text x="73" y="234" class="chart-label">Jan</text><text x="178" y="234" class="chart-label">Feb</text> <text x="283" y="234" class="chart-label">Mar</text><text x="388" y="234" class="chart-label">Apr</text> <text x="493" y="234" class="chart-label">May</text><text x="598" y="234" class="chart-label">Jun</text> <text x="703" y="234" class="chart-label">Jul</text> <text x="68" y="137" class="chart-value">10.56M</text><text x="176" y="147" class="chart-value">9.77M</text> <text x="278" y="123" class="chart-value">11.81M</text><text x="389" y="201" class="chart-value">8.09M</text> <text x="490" y="22" class="chart-value">17.24M</text><text x="595" y="35" class="chart-value">16.32M</text> <text x="698" y="18" class="chart-value">17.87M</text> </svg> </div>
+ </div>
+ 
+<div class="data-card"> <span class="tag">Revenue · documented measures</span> <h3>Revenue across the documented period.</h3> 
+<div class="sub">I generated $101,522 in net revenue by March, with $114,478.36 in revenue documented across November 2025 to July 2026.</div>
+ 
+<div class="revenue-strip"> 
+<div class="revenue-stat"><b>$34.55K</b><span>February net revenue</span></div>
+ 
+<div class="revenue-stat"><b>$101.52K</b><span>Net revenue by end of Mar</span></div>
+ 
+<div class="revenue-stat"><b>$22.62K</b><span>May revenue</span></div>
+ 
+<div class="revenue-stat"><b>$114.48K</b><span>Revenue through Jul</span></div>
+ </div>
+ <p class="testimonial-note">May revenue was $22,621.67 and June revenue was $16,462.21. I have not added a July monthly revenue figure where the available data does not provide one.</p> </div>
+
+</div>
+
+</div>
+
+</section> <section>
+
+<div class="inner">
+
+<div class="sectionhead"> <h2>I built three properties around one growth system.</h2> <p>I use the same operating model across entertainment, gaming and news , with each property measured over its own documented data period.</p>
+</div>
+ 
+<div class="portfolio-overview"> 
+<article class="property-card"> <span class="tag">Inde News</span> 
+<div class="period">October 2025 to July 2026</div>
+ <h3>I built an MSN news property from zero.</h3> <p>I used data, editorial strategy, audience growth, multi-format publishing and monetisation to build it.</p> 
+<div class="property-metrics"> 
+<div class="property-metric"><b>95.94M</b><span>period pageviews</span></div>
+ 
+<div class="property-metric"><b>17.87M</b><span>July pageviews</span></div>
+ 
+<div class="property-metric"><b>$114K+</b><span>revenue</span></div>
+ 
+<div class="property-metric"><b>15+</b><span>team members</span></div>
+ </div>
+ </article>
+ 
+<article class="property-card"> <span class="tag">Gaming Community</span> 
+<div class="period">November 2025 to July 2026</div>
+ <h3>I scaled a gaming content engine through MSN.</h3> <p>I used trend-led publishing, editorial operations, format optimisation and performance feedback to grow it.</p> 
+<div class="property-metrics"> 
+<div class="property-metric"><b>59.56M</b><span>period pageviews</span></div>
+ 
+<div class="property-metric"><b>17.71M</b><span>July pageviews</span></div>
+ 
+<div class="property-metric"><b>$29.04K</b><span>revenue</span></div>
+ 
+<div class="property-metric"><b>12.3×</b><span>Jan to Jul growth</span></div>
+ </div>
+ </article>
+ 
+<article class="property-card"> <span class="tag">Netflix Junkie</span> 
+<div class="period">June 2026 to July 2026</div>
+ <h3>I scaled the entertainment website alongside its MSN distribution.</h3> <p>I scaled the website alongside a large MSN feed using trend forecasting, content packaging and KPI-led optimisation.</p> 
+<div class="property-metrics"> 
+<div class="property-metric"><b>24.41M</b><span>period pageviews</span></div>
+ 
+<div class="property-metric"><b>13.73M</b><span>July pageviews</span></div>
+ 
+<div class="property-metric"><b>+28.5%</b><span>June to July</span></div>
+ 
+<div class="property-metric"><b>3M to 5M</b><span>MSN feed milestone</span></div>
+ </div>
+ 
+<div class="property-links"> <a href="https://www.netflixjunkie.com/" target="_blank">Website</a> <a href="https://www.msn.com/en-us/channel/source/Netflix%20Junkie/sr-vid-vxunmuakp9buv073vr8hiurxis9ebd77ik37buj4trnvejwk2ims" target="_blank">MSN channel</a> </div>
+ </article>
+ </div>
+
+</div>
+
+</section> <section class="band" id="scope">
+
+<div class="inner">
+
+<div class="sectionhead"><h2>I built my career in layers.</h2><p>I didn't jump from writer to strategist overnight. Each stage added a new layer: craft, commercial thinking, systems, distribution, then scale.</p></div>
+
+
+<div class="evolution">
+
+<div class="evo">
+<div class="step">1</div>
+<h3>Writer</h3><p>Research · SEO · Search intent · Editorial judgment</p></div>
+
+
+<div class="evo">
+<div class="step">2</div>
+<h3>Content Marketer</h3><p>Blogs · Service pages · Lead generation · Commercial intent</p></div>
+
+
+<div class="evo">
+<div class="step">3</div>
+<h3>Strategist</h3><p>SEO · Evergreen · Content architecture · Performance</p></div>
+
+
+<div class="evo">
+<div class="step">4</div>
+<h3>Growth Builder</h3><p>Distribution · Audience · Platform behaviour · Revenue</p></div>
+
+
+<div class="evo">
+<div class="step">5</div>
+<h3>Editorial Leader</h3><p>Teams · Operations · Scale · Repeatable systems</p></div>
+
+</div>
+
+</div>
+
+</section> <section id="work">
+
+<div class="inner">
+
+<div class="sectionhead"><h2>What I've built.</h2><p>Projects where the work went beyond publishing individual pieces and became a system for finding, producing, distributing and improving content.</p></div>
+
+
+<div class="cases"> 
+<article class="case">
+
+<div class="case-top">
+<div><span class="tag">Inde News · Content & distribution</span>
+<div class="period">Data period: October 2025 to July 2026</div>
+<h3>I built a content property around distribution, editorial planning, audience behaviour and monetisation.</h3><p>The challenge was not simply to publish more. It was to create a repeatable system for finding opportunities, packaging stories, coordinating production, learning from performance and connecting editorial output to audience and commercial outcomes.</p></div>
+
+
+<div class="resultbox">
+<div class="resultrow">
+
+<div class="result"><b>95.94M</b><span>pageviews through Jul 2026</span></div>
+
+
+<div class="result"><b>17.87M</b><span>July 2026 pageviews</span></div>
+
+
+<div class="result"><b>15+</b><span>team members</span></div>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="case-grid">
+
+<article><h4>Find what can travel</h4><p>I identify topics, trends and formats with potential beyond the owned-site publishing cycle.</p></article>
+
+
+<article><h4>Make the story fit</h4><p>I made headlines, formats and editorial packaging part of the distribution strategy.</p></article>
+
+
+<article><h4>Let performance change the plan</h4><p>I use audience and distribution signals to decide what to repeat, update or stop.</p></article>
+
+
+<article><h4>Turn wins into a system</h4><p>I build processes that let a team consistently produce, package and distribute at scale.</p></article>
+
+</div>
+
+</article>
+ 
+<article class="case">
+
+<div class="case-top">
+<div><span class="tag">Gaming Community · MSN distribution</span>
+<div class="period">Data period: November 2025 to July 2026</div>
+<h3>I turned distribution into audience and revenue.</h3><p>MSN became a laboratory for understanding platform-specific content behaviour and turning editorial output into measurable growth.</p></div>
+
+
+<div class="resultbox">
+<div class="resultrow">
+
+<div class="result"><b>59.56M</b><span>pageviews through Jul 2026</span></div>
+
+
+<div class="result"><b>17.71M</b><span>July 2026 pageviews</span></div>
+
+
+<div class="result"><b>$29.04K</b><span>revenue through Jul</span></div>
+
+</div>
+<p style="margin:14px 0 0;color:var(--muted);font-size:.8rem"></p></div>
+
+</div>
+
+
+<div class="case-grid">
+
+<article><h4>Content</h4><p>I select stories with platform potential rather than treating every article equally.</p></article>
+
+
+<article><h4>Packaging</h4><p>I adapt headlines, formats and presentation to the audience and distribution environment.</p></article>
+
+
+<article><h4>Feedback</h4><p>I track performance and iterate on what the platform and audience are rewarding.</p></article>
+
+
+<article><h4>Scale</h4><p>I turn individual wins into a repeatable distribution-led content operation.</p></article>
+
+</div>
+
+</article>
+ 
+<article class="case">
+
+<div class="case-top">
+<div><span class="tag">Netflix Junkie · Website + MSN distribution</span>
+<div class="period">Data period: June 2026 to July 2026</div>
+<h3>I scaled the website and its MSN distribution together.</h3><p>My role evolved from writing into content strategy, SEO, vertical scaling, evergreen strategy and editorial operations across pop culture, anime, esports and entertainment.</p></div>
+
+
+<div class="resultbox">
+<div class="resultrow">
+
+<div class="result"><b>1,500+</b><span>pages ranked</span></div>
+
+
+<div class="result"><b>5+</b><span>content domains</span></div>
+
+
+<div class="result"><b>1</b><span>repeatable system</span></div>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="case-grid">
+
+<article><h4>Search demand</h4><p>I identify release-driven spikes, evergreen opportunities and topics with durable search value.</p></article>
+
+
+<article><h4>Architecture</h4><p>I build topic coverage and supporting content rather than relying on isolated SEO pieces.</p></article>
+
+
+<article><h4>Optimization</h4><p>I use rankings, clicks, pageviews and algorithm shifts to prioritise updates.</p></article>
+
+
+<article><h4>Operations</h4><p>I turn content insight into scalable editorial planning and team execution.</p></article>
+
+</div>
+
+</article>
+ </div>
+
+</div>
+
+</section> 
+<section id="writing">
+<div class="inner">
+<div class="sectionhead">
+  <h2>Writing became strategy.</h2>
+  <p>The writing foundation still shapes how I approach research, SEO, audience intent, editorial planning and commercial content.</p>
+</div>
+
+<div class="writing-layout">
+  <article class="writing-foundation">
+    <span class="tag tag-light">SPORTSKEEDA</span>
+    <h3>Where the writing foundation became strategy.</h3>
+    <p>Sportskeeda was where I moved beyond simply producing articles and started understanding how content works as a system. Research, editorial judgement, search intent, evergreen planning and performance eventually became part of the job.</p>
+
+    <div class="writing-points">
+      <div class="writing-point"><span>01</span><div><b>Editorial craft</b><small>Research + storytelling</small></div></div>
+      <div class="writing-point"><span>02</span><div><b>Search-led thinking</b><small>SEO + intent</small></div></div>
+      <div class="writing-point"><span>03</span><div><b>Content systems</b><small>Planning + optimisation</small></div></div>
+      <div class="writing-point"><span>04</span><div><b>Management</b><small>Teams + execution</small></div></div>
+    </div>
+
+    <div class="writing-foot"><span>From individual articles</span><b>to vertical ownership</b></div>
+  </article>
+
+  <div class="commercial-grid">
+    <article class="work-card">
+      <span class="tag">BUSINESS</span><h3>Arrowfish Consulting</h3>
+      <p>I wrote research-heavy content around business valuation, forensic accounting and related services.</p>
+      <a href="https://www.arrowfishconsulting.com/" target="_blank" rel="noopener">View site →</a>
+    </article>
+    <article class="work-card">
+      <span class="tag">ENGINEERING</span><h3>Souffront Engineering</h3>
+      <p>I wrote technical and service-oriented content that made complex problems easier to understand.</p>
+      <a href="https://souffrontengineering.com/" target="_blank" rel="noopener">View site →</a>
+    </article>
+    <article class="work-card">
+      <span class="tag">HOSPITALITY</span><h3>Westfield Banquet</h3>
+      <p>I wrote consumer-facing content focused on services, experiences and enquiry intent.</p>
+      <a href="https://www.westfieldbanquet.ca/" target="_blank" rel="noopener">View site →</a>
+    </article>
+    <article class="work-card">
+      <span class="tag">HOME & WELLNESS</span><h3>Steam & Sauna Experts</h3>
+      <p>I wrote commercial content explaining services and solutions for a local buying audience.</p>
+      <a href="https://www.steamandsaunaexperts.com/" target="_blank" rel="noopener">View site →</a>
+    </article>
+  </div>
+</div>
+</div>
+</section>
+ <section>
+
+<div class="inner">
+
+<div class="sectionhead"><h2>I connect content with business goals.</h2><p>I connect editorial decisions to measurable outcomes.</p></div>
+
+
+<div class="aboutgrid">
+
+<div class="aboutcard"><h3>Content Strategy</h3><p>I turn audience needs and business goals into scalable editorial plans.</p></div>
+
+
+<div class="aboutcard"><h3>SEO & Evergreen</h3><p>I use search intent, topical coverage, evergreen opportunities and systematic optimisation.</p></div>
+
+
+<div class="aboutcard"><h3>Distribution</h3><p>I adapt content to platforms with different audiences, incentives and behaviour.</p></div>
+
+
+<div class="aboutcard"><h3>Audience Growth</h3><p>I use performance data to decide what deserves more investment.</p></div>
+
+
+<div class="aboutcard"><h3>Editorial Operations</h3><p>I build workflows, quality standards and team systems that scale output without losing direction.</p></div>
+
+
+<div class="aboutcard"><h3>Monetization</h3><p>I connect content and distribution decisions to traffic, revenue and commercial outcomes.</p></div>
+
+</div>
+
+</div>
+
+</section> 
+
+<section id="testimonials">
+<div class="inner">
+<div class="sectionhead">
+  <h2>What people I've worked with say.</h2>
+  <p>Recommendations from people who managed me, worked with me, or saw my work up close.</p>
+</div>
+
+<div class="testimonial-slider" aria-label="Testimonials">
+  <button class="testimonial-nav prev" type="button" aria-label="Previous recommendation">←</button>
+
+  <div class="testimonial-track">
+
+    <article class="testimonial-slide active">
+      <div class="testimonial-meta">
+        <div class="rec-avatar">N</div>
+        <div><div class="rec-name">Nandish Thaker</div><div class="rec-role">Audience Growth · Content Strategy · Former manager</div></div>
+      </div>
+      <blockquote class="testimonial-excerpt">I have had the opportunity to see Ajay’s growth firsthand, from when he joined my team as a writer in his very first professional role to eventually becoming an Assistant Content Manager under my leadership at Sportskeeda. He is a fast learner, highly responsible, and someone who consistently pushes himself to improve.</blockquote>
+      <details class="testimonial-more">
+        <summary>Read more</summary>
+        <div class="testimonial-full">
+          <p>I mentored Ajay through his transition into management, where he went on to successfully manage three content categories and a team of writers. He has a strong ability to understand briefs, take ownership, and deliver against requirements while maintaining a sharp understanding of what works for audiences.</p>
+          <p>What has always stood out to me is his curiosity and willingness to adapt. He takes feedback seriously, learns quickly, and applies that learning to his work. It has been particularly rewarding to see him carry those learnings forward and flourish in his subsequent role as a Content Manager.</p>
+          <p>I would recommend Ajay wholeheartedly to any organisation looking for a dependable, curious and capable content professional with strong potential for leadership.</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="testimonial-slide">
+      <div class="testimonial-meta">
+        <div class="rec-avatar">K</div>
+        <div><div class="rec-name">Karishma Dasgupta</div><div class="rec-role">Entertainment Journalist · Creative Director · Former direct report</div></div>
+      </div>
+      <blockquote class="testimonial-excerpt">I had the chance to work with Ajay as my Sub-Group Head at Netflix Junkie and he was someone I genuinely learned a lot from. He helped us understand trend analysis and how to turn those insights into content that was not just timely but also had the potential to rank well and perform on the website.</blockquote>
+      <details class="testimonial-more">
+        <summary>Read more</summary>
+        <div class="testimonial-full">
+          <p>What I really appreciated was his knack for spotting entertainment trends early and figuring out how we could build strong content around them. His guidance helped me understand content development from a more strategic perspective and I believe he played a big role in improving the overall quality of content across Netflix Junkie.</p>
+        </div>
+      </details>
+    </article>
+
+    <article class="testimonial-slide">
+      <div class="testimonial-meta">
+        <div class="rec-avatar">A</div>
+        <div><div class="rec-name">Aayush Sharma</div><div class="rec-role">PR & Outreach Manager · Senior Entertainment Journalist · Former teammate</div></div>
+      </div>
+      <blockquote class="testimonial-excerpt">Ajay is not only a hard-working man, but also knows how to differentiate between what works and what doesn't. His news-sense is on the spot and he has a strong understanding of what audiences want to read and engage with.</blockquote>
+      <details class="testimonial-more">
+        <summary>Read more</summary>
+        <div class="testimonial-full">
+          <p>He brings together creativity, editorial judgement, and a sharp eye for trends, making him someone you can always rely on to make the right content decisions.</p>
+        </div>
+      </details>
+    </article>
+
+  </div>
+
+  <button class="testimonial-nav next" type="button" aria-label="Next recommendation">→</button>
+</div>
+
+<div class="testimonial-dots" aria-label="Choose recommendation">
+  <button class="dot active" type="button" aria-label="Nandish Thaker"></button>
+  <button class="dot" type="button" aria-label="Karishma Dasgupta"></button>
+  <button class="dot" type="button" aria-label="Aayush Sharma"></button>
+</div>
+</div>
+</section>
+
+ <section id="about" class="band">
+
+<div class="inner">
+
+<div class="sectionhead"><h2>About the evolution.</h2><p>I started with the craft: research, writing, SEO, search intent and editorial judgment. It expanded into commercial content, content strategy, performance, distribution, audience growth and leadership.</p></div>
+
+
+<div class="aboutgrid">
+
+<div class="aboutcard"><h3>Early foundation</h3><p>I learned how to research, write for different audiences, understand search intent and make content useful.</p></div>
+
+
+<div class="aboutcard"><h3>Commercial lens</h3><p>I moved into blogs, service pages and lead-generation content where content had to support a business objective.</p></div>
+
+
+<div class="aboutcard"><h3>Growth lens</h3><p>I learned to treat distribution, platform behaviour and performance data as part of content strategy.</p></div>
+
+
+<div class="aboutcard"><h3>Leadership lens</h3><p>I moved from individual execution toward vertical ownership, team coordination, systems, scale and revenue.</p></div>
+
+</div>
+
+</div>
+
+</section> <section id="contact" class="contact">
+
+<div class="inner">
+
+<div class="sectionhead"><h2>Let's build something that works.</h2><p>Open to content strategy, editorial leadership, audience growth, distribution and content operations opportunities.</p></div>
+
+
+<div class="buttons">
+<a class="btn" href="mailto:sainajay24@gmail.com">Email me</a>
+<a class="btn alt" href="https://wa.me/917340418845" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn alt" href="https://www.linkedin.com/in/ajay-sain-0124a1137/" target="_blank">LinkedIn</a>
+</div>
+
+</div>
+
+</section>
+</main> <footer>
+<div class="footerinner"><span>Ajay Sain · Content Strategy · Editorial · SEO · Audience Growth · Distribution</span><span>I connect editorial craft, strategy, distribution and growth.</span></div>
+</footer>
+
+<script>
+(function(){
+  const slides = Array.from(document.querySelectorAll('.testimonial-slide'));
+  const dots = Array.from(document.querySelectorAll('.testimonial-dots .dot'));
+  const prev = document.querySelector('.testimonial-nav.prev');
+  const next = document.querySelector('.testimonial-nav.next');
+  if (!slides.length) return;
+
+  let index = 0;
+  let timer;
+
+  function show(i){
+    index = (i + slides.length) % slides.length;
+    slides.forEach((slide,n) => slide.classList.toggle('active', n === index));
+    dots.forEach((dot,n) => dot.classList.toggle('active', n === index));
+  }
+
+  function start(){
+    clearInterval(timer);
+    timer = setInterval(() => {
+      const open = document.querySelector('.testimonial-slide.active .testimonial-more[open]');
+      if (!open) show(index + 1);
+    }, 7000);
+  }
+
+  prev && prev.addEventListener('click', () => { show(index - 1); start(); });
+  next && next.addEventListener('click', () => { show(index + 1); start(); });
+  dots.forEach((dot,n) => dot.addEventListener('click', () => { show(n); start(); }));
+
+  document.querySelectorAll('.testimonial-more').forEach(details => {
+    details.addEventListener('toggle', () => {
+      if (details.open) clearInterval(timer);
+      else start();
+    });
+  });
+
+  show(0);
+  start();
+})();
+</script>
+
+</body>
+</html>
